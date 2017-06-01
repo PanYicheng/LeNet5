@@ -1,0 +1,23 @@
+﻿  minst.cpp
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\minst.cpp(62): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\minst.cpp(21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\minst.cpp(73): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\minst.cpp(89): warning C4101: “l”: 未引用的局部变量
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\minst.cpp(149): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  cnn.cpp
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\cnn.cpp(58): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\cnn.cpp(151): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\cnn.cpp(193): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\cnn.cpp(225): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\cnn.cpp(291): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\cnn.cpp(537): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+f:\projects\deeplearningc\deeplearningc\cnn\cnn\cnn.cpp(620): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  正在生成代码...
+  CNN.vcxproj -> F:\Projects\DeepLearningC\DeepLearningC\CNN\Debug\CNN.exe
+  CNN.vcxproj -> F:\Projects\DeepLearningC\DeepLearningC\CNN\Debug\CNN.pdb (Full PDB)
