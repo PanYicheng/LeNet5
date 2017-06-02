@@ -71,7 +71,7 @@ LabelArr read_Lable(const char* filename)// ∂¡»ÎÕºœÒ
 {
 	FILE  *fp=NULL;
 	fp=fopen(filename,"rb");
-	if(fp==NULL)
+	if(fp   ==NULL)
 		printf("open file failed\n");
 	assert(fp);
 

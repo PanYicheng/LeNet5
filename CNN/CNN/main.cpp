@@ -10,9 +10,9 @@
 // 以下都是测试函数，可以不用管
 // 测试Minst模块是否工作正常
 void test_minst(){
-	LabelArr testLabel=read_Lable("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Minst\\train-labels.idx1-ubyte");
-	ImgArr testImg=read_Img("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Minst\\train-images.idx3-ubyte");
-	save_Img(testImg,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Images");
+	LabelArr testLabel=read_Lable("..\\Minst\\train-labels.idx1-ubyte");
+	ImgArr testImg=read_Img("..\\Minst\\train-images.idx3-ubyte");
+	save_Img(testImg,"..\\Images");
 }
 // 测试Mat模块是否工作正常
 void test_mat(){
@@ -42,15 +42,15 @@ void test_mat(){
 	nSize cov3size={srcSize.c-(mapSize.c-1),srcSize.r-(mapSize.r-1)};
 	float** cov3=cov(map,mapSize,src,srcSize,valid);
 
-	savemat(src,srcSize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\src.ma");
-	savemat(map,mapSize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\map.ma");
-	savemat(cov1,cov1size,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\cov1.ma");
+	savemat(src,srcSize,"..\\Data\\src.ma");
+	savemat(map,mapSize,"..\\Data\\map.ma");
+	savemat(cov1,cov1size,"..\\Data\\cov1.ma");
 	//savemat(cov2,cov2size,"E:\\Code\\Matlab\\PicTrans\\cov2.ma");
-	savemat(cov3,cov3size,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\cov3.ma");
+	savemat(cov3,cov3size,"..\\Data\\cov3.ma");
 
 	float** sample=UpSample(src,srcSize,2,2);
 	nSize samSize={srcSize.c*2,srcSize.r*2};
-	savemat(sample,samSize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\sam.ma");
+	savemat(sample,samSize,"..\\Data\\sam.ma");
 }
 void test_mat1()
 {
@@ -94,21 +94,21 @@ void test_mat1()
 	addmat(cov1,cov1,covsize,cov3,covsize);
 
 
-	savemat(src,srcSize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\src.ma");
-	savemat(map1,mapSize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\map1.ma");
-	savemat(map2,mapSize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\map2.ma");
-	savemat(map3,mapSize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\map3.ma");
-	savemat(cov1,covsize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\cov1.ma");
-	savemat(cov2,covsize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\cov2.ma");
-	savemat(cov3,covsize,"F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\cov3.ma");
+	savemat(src,srcSize,"..\\Data\\src.ma");
+	savemat(map1,mapSize,"..\\Data\\map1.ma");
+	savemat(map2,mapSize,"..\\Data\\map2.ma");
+	savemat(map3,mapSize,"..\\Data\\map3.ma");
+	savemat(cov1,covsize,"..\\Data\\cov1.ma");
+	savemat(cov2,covsize,"..\\Data\\cov2.ma");
+	savemat(cov3,covsize,"..\\Data\\cov3.ma");
 
 }
 // 测试cnn模块是否工作正常
 void test_cnn()
 {
 
-	LabelArr testLabel=read_Lable("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Minst\\train-labels.idx1-ubyte");
-	ImgArr testImg=read_Img("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Minst\\train-images.idx3-ubyte");
+	LabelArr testLabel=read_Lable("..\\Minst\\train-labels.idx1-ubyte");
+	ImgArr testImg=read_Img("..\\Minst\\train-images.idx3-ubyte");
 
 	nSize inputSize={testImg->ImgPtr[0].c,testImg->ImgPtr[0].r};
 	int outSize=testLabel->LabelPtr[0].l;
@@ -123,7 +123,7 @@ void test_cnn()
 	cnntrain(cnn,testImg,testLabel,opts,trainNum);
 
 	FILE  *fp=NULL;
-	fp=fopen("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\cnnL.ma","wb");
+	fp=fopen("..\\Data\\cnnL.ma","wb");
 	if(fp==NULL)
 		printf("write file failed\n");
 	fwrite(cnn->L,sizeof(float),trainNum,fp);
@@ -134,10 +134,10 @@ void test_cnn()
 /*主函数*/
 int main()
 {
-	LabelArr trainLabel=read_Lable("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Minst\\train-labels.idx1-ubyte");
-	ImgArr trainImg=read_Img("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Minst\\train-images.idx3-ubyte");
-	LabelArr testLabel=read_Lable("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Minst\\t10k-labels.idx1-ubyte");
-	ImgArr testImg=read_Img("F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Minst\\t10k-images.idx3-ubyte");
+	LabelArr trainLabel=read_Lable("..\\Minst\\train-labels.idx1-ubyte");
+	ImgArr trainImg=read_Img("..\\Minst\\train-images.idx3-ubyte");
+	LabelArr testLabel=read_Lable("..\\Minst\\t10k-labels.idx1-ubyte");
+	ImgArr testImg=read_Img("..\\Minst\\t10k-images.idx3-ubyte");
 
 	nSize inputSize={testImg->ImgPtr[0].c,testImg->ImgPtr[0].r};
 	int outSize=testLabel->LabelPtr[0].l;
@@ -147,26 +147,26 @@ int main()
 	cnnsetup(cnn,inputSize,outSize);
 
 	// CNN训练
-	/*
+	
 	CNNOpts opts;
 	opts.numepochs=1;
 	opts.alpha=1.0;
 	int trainNum=55000;
 	cnntrain(cnn,trainImg,trainLabel,opts,trainNum);
 	printf("train finished!!\n");
-	savecnn(cnn,"minst.cnn");
+	savecnn(cnn,"minst_new.cnn");
 	// 保存训练误差
 	FILE  *fp=NULL;
-	fp=fopen("E:\\Code\\Matlab\\PicTrans\\cnnL.ma","wb");
+	fp=fopen("..\\Data\\cnnL.ma","wb");
 	if(fp==NULL)
 		printf("write file failed\n");
 	fwrite(cnn->L,sizeof(float),trainNum,fp);
 	fclose(fp);
-	*/
+	
 
 
 	// CNN测试
-	importcnn(cnn,"minst.cnn");
+	importcnn(cnn,"minst_new.cnn");
 	int testNum=10000;
 	float incorrectRatio=0.0;
 	incorrectRatio=cnntest(cnn,testImg,testLabel,testNum);

@@ -274,7 +274,7 @@ void cnntrain(CNN* cnn,	ImgArr inputData,LabelArr outputData,CNNOpts opts,int tr
 			cnnbp(cnn,outputData->LabelPtr[n].LabelData); // 后向传播，这里主要计算各神经元的误差梯度
 
 
-			char* filedir="F:\\Projects\\DeepLearningC\\DeepLearningC\\CNN\\Data";
+			char* filedir="..\\Data";
 			const char* filename=combine_strings(filedir,combine_strings(intTochar(n),".cnn"));
 			savecnndata(cnn,filename,inputData->ImgPtr[n].ImgData);
 			cnnapplygrads(cnn,opts,inputData->ImgPtr[n].ImgData); // 更新权重
