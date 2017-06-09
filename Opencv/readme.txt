@@ -1,0 +1,10 @@
+本程序使用了opencv364位版本，开发于vs2015。
+使用方法：打开程序在image窗口用鼠标输入图像，按‘R'键清空
+按’S'键识别并显示结果。
+要切换数字和字母识别要修改：
+1、define的NUMBERRECOGNIZE，数字加上改define，字母注释掉
+该define。
+2、OUTPUT大小，数字10，字母26
+3、LAYER1大小，数字6，字母10
+4、foo函数中的load函数的第二个字符串参数，数字num_modelname
+，字母cha_modelname。

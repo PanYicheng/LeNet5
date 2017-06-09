@@ -1,0 +1,13 @@
+﻿  Lenet5.cpp
+  正在生成代码...
+  正在编译...
+  main.cpp
+c:\opencv-git\opencv-build\install\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\opencv-git\opencv-build\install\include\opencv2\core\mat.hpp(2588): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\opencv-git\opencv-build\install\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\opencv-git\opencv-build\install\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\opencv-git\opencv-build\install\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\opencv-git\opencv-build\install\include\opencv2\imgproc.hpp(596): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  Opencv.vcxproj -> D:\VS_Files\Opencv\x64\Debug\Opencv.exe
+  Opencv.vcxproj -> D:\VS_Files\Opencv\x64\Debug\Opencv.pdb (Partial PDB)
