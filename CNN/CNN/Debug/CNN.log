@@ -1,0 +1,25 @@
+﻿  main.cpp
+f:\projects\lenet5\cnn\cnn\main.cpp(27): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\main.cpp(34): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\main.cpp(64): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\main.cpp(71): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\main.cpp(78): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\main.cpp(85): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\main.cpp(126): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+f:\projects\lenet5\cnn\cnn\main.cpp(160): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  cnn.cpp
+f:\projects\lenet5\cnn\cnn\cnn.cpp(58): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\cnn.cpp(151): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\cnn.cpp(193): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+f:\projects\lenet5\cnn\cnn\cnn.cpp(225): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+f:\projects\lenet5\cnn\cnn\cnn.cpp(291): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\cnn.cpp(537): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+f:\projects\lenet5\cnn\cnn\cnn.cpp(620): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  正在生成代码...
+  CNN.vcxproj -> F:\Projects\LeNet5\CNN\Debug\CNN.exe
+  CNN.vcxproj -> F:\Projects\LeNet5\CNN\Debug\CNN.pdb (Full PDB)
